@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/warehouse
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: true
+    properties:
+      dialect: 'org.hibernate.dialect.PostgreSQLDialect'
+      hibernate:
+        format_sql: true
+        enable_lazy_load_no_trans: true
+        show_sql: true
+  messages:
+    always-use-message-format: true
